@@ -1,0 +1,18 @@
+.btn {
+  font-weight : bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: all .5s ease;
+  &--green {
+    border: 3px solid $color-green-light;
+    background: transparent;
+    color: $color-white;
+  
+    &:hover {
+      background: $color-green-light;
+      color: $color-white;
+    }
+
+  }
+}

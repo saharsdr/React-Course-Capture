@@ -1,0 +1,34 @@
+.section-about {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: $color-white;
+
+  &__descrioption {
+    padding-right: 6rem;
+    flex: 1;
+
+    &--title {
+      .hide{
+        overflow:hidden;
+      }
+    
+    }
+    h2 {
+      font-weight: lighter;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+    }
+  }
+}
