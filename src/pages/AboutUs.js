@@ -3,9 +3,13 @@ import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
 import FaqSection from "../components/FaqSections";
 
+// Page Style
+import AboutUsStyle from "./AboutUsStyle";
+
 const AboutUs = () => {
   return (
     <>
+      <AboutUsStyle />
       <AboutSection />
       <ServicesSection />
       <FaqSection />
