@@ -27,9 +27,10 @@ const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
   /* font-family: 'Lobster', cursive; */
-  
+
 body {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 h2 {
@@ -38,10 +39,11 @@ h2 {
   text-transform : uppercase
 }
 h3 {
-  color: $color-white;
+  color: white;
 }
 h4{
   font-weight:bold;
+  font-size : 2.5rem;
 }
 a {
   text-decoration: none;
