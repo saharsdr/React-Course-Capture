@@ -62,7 +62,9 @@ p {
   color: #23d997;
 }
 
-
+body {
+    background-color: #1b1b1b;
+  }
 
 
 
