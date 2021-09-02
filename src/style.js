@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const About = styled.div`
   min-height: 90vh;
@@ -33,7 +34,7 @@ export const Hide = styled.div`
   overflow:hidden;
 `;
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   font-weight: bold;
   font-size: 1.3rem;
   cursor: pointer;
