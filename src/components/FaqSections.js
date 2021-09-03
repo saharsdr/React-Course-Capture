@@ -1,55 +1,59 @@
 import styled from "styled-components";
 import { About } from "../style";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
-
   return (
     <Faq>
-      <h2>Any Questions <span className="text--green-light">FAQ</span></h2>
-      <div className="question">
-        <h4>How Do I Start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum corrupti laboriosam rerum iusto atque iure cumque. Voluptate, pariatur explicabo?  
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <h2>
+        Any Questions <span className="text--green-light">FAQ</span>
+      </h2>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              earum corrupti laboriosam rerum iusto atque iure cumque.
+              Voluptate, pariatur explicabo?
+            </p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Daily Schedule</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum corrupti laboriosam rerum iusto atque iure cumque. Voluptate, pariatur explicabo?  
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="Daily Schedule">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              earum corrupti laboriosam rerum iusto atque iure cumque.
+              Voluptate, pariatur explicabo?
+            </p>
+          </div>
+        </Toggle>
 
-      <div className="question">
-        <h4>Diffrent pay method</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum corrupti laboriosam rerum iusto atque iure cumque. Voluptate, pariatur explicabo?  
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="Diffrent pay method">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              earum corrupti laboriosam rerum iusto atque iure cumque.
+              Voluptate, pariatur explicabo?
+            </p>
+          </div>
+        </Toggle>
 
-
-      <div className="question">
-        <h4>What Products do you offers</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum corrupti laboriosam rerum iusto atque iure cumque. Voluptate, pariatur explicabo?  
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+        <Toggle title="What Products do you offers">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              earum corrupti laboriosam rerum iusto atque iure cumque.
+              Voluptate, pariatur explicabo?
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
@@ -65,27 +69,24 @@ const Faq = styled(About)`
   }
 
   .faq-line {
-    background : #cccccc;
-    height: .2rem;
+    background: #cccccc;
+    height: 0.2rem;
     margin: 3rem 0;
     width: 100%;
   }
 
   .question {
-    padding : 3rem 0;
+    padding: 3rem 0;
     cursor: pointer;
-
   }
 
   .answer {
-    padding : 2rem 0;
+    padding: 2rem 0;
 
     p {
       padding: 1rem 0;
     }
   }
-
-
 `;
 
 export default FaqSection;
